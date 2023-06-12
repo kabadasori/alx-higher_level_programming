@@ -1,3 +1,15 @@
 #!/usr/bin/python3
+# 9-max_integer.py
+# Kabada Sori <ambouniversity>
+
 def max_integer(my_list=[]):
-        return (min(my_list, key=lambda i: -i)) if my_list else None
+    """Find the biggest integer of a list."""
+    if len(my_list) == 0:
+        return (None)
+
+    big = my_list[0]
+    for i in range(len(my_list)):
+        if my_list[i] > big:
+            big = my_list[i]
+
+    return (big)

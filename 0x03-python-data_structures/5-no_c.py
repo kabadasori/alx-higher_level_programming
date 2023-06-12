@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 5-no_c.py
-# Bedasa Wayessa <bedonaf@gmail.com>
+# Kabada Sori  <Ambo University>
 
 
 def no_c(my_string):
