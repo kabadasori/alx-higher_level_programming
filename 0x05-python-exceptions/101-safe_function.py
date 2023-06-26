@@ -1,10 +1,15 @@
 #!/usr/bin/python3
-from sys import stderr
+# 101-safe_function.py
+# Kabada Sori
+
+#!/usr/bin/python3
+import sys
 
 
 def safe_function(fct, *args):
     try:
-        return (fct(*args))
-    except Exception as te:
-        stderr.write("Exception: {}\n".format(te))
-        return (None)
+        result = fct(*args)
+    except Exception as e:
+        print("Exception: {}".format(e), file=sys.stderr)
+        return None
+    return result
