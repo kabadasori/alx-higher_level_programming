@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-def magic_calculation(a, b):
-    result = 0
-    for i in range(1, 3):
-        try:
-            if i > a:
-                raise Exception("Too far")
-            else:
-                result += (a**b) / i
-        except:
-            result = b + a
-            break
-    return result
+# 102-magic_calculation.py
+# Kabada Sori
+
+
+def magic_calculation(a, b, c):
+    """Match bytecode provided by Holberton School."""
+    if a < b:
+        return (c)
+    if c > b:
+        return (a + b)
+    return (a*b - c)
