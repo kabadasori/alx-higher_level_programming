@@ -1,1 +1,1 @@
-this is python inheritace project
+this is python inheritance
